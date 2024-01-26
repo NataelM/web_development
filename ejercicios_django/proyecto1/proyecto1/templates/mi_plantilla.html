@@ -1,0 +1,35 @@
+<html>
+
+    <body>
+
+        {% include "superior/barra.html"%}
+
+        <h1 style="color:red">
+        esta es mi primera pagina con mi primera plantilla
+        </h1>
+
+        {% if nombre_persona == 'Act Jonathan' %}
+        <p>El curso lo imparte el profesor titular</p>
+        {% endif %}
+
+        <!-- en este html los objetos entre las llaves dobles heredan las programación Poo de python -->
+        <p>el nombre del programador es {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+        <p><strong>Temas del curso</strong></p>
+        <p>
+            <ul>
+            <!-- así se genera una condición if-->
+            {% if temas %} <!-- Evalua existencia y vacuidad-->
+            <!-- así se genera un ciclo for -->
+                {% for tema in temas %}
+                <!-- los pipelines | son filtros que se pueden aplicar a los objetos -->
+                <li>{{tema|lower}}</li>
+                {% endfor %}
+            
+            {% else %}
+                <p>no hay elementos de curso(temas) que tomar</p>
+            {% endif %}
+            </ul>
+        </p>
+    </body>
+
+</html>

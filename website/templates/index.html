@@ -1,0 +1,134 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML como HTML5 -->
+<html lang="en"> <!-- Etiqueta HTML con el atributo "lang" configurado en inglés (en) -->
+<head>
+    <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la ventana de visualización y escala inicial -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- Enlace a la hoja de estilo CSS de Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"> <!-- Enlace a un archivo CSS personalizado -->
+    <title>Zero2Hero</title> <!-- Título de la página -->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- Barra de navegación utilizando clases de Bootstrap -->
+        <div class="container-fluid"> <!-- Contenedor fluido para el diseño -->
+            <a class="navbar-brand" href="index.html">Zero2Hero</a> <!-- Marca del sitio en la barra de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Contenido de la barra de navegación colapsable en dispositivos pequeños -->
+                <ul class="navbar-nav"> <!-- Lista no ordenada para elementos de la barra de navegación -->
+                    <li class="nav-item dropdown"> <!-- Elemento de lista con menú desplegable -->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Cursos
+                        </a>
+                        <ul class="dropdown-menu"> <!-- Menú desplegable con elementos de lista -->
+                          <li><a class="dropdown-item" href="#">Python</a></li>
+                          <li><a class="dropdown-item" href="#">R</a></li>
+                          <li><a class="dropdown-item" href="#">HTML, CSS, JS</a></li>
+                        </ul>
+                    </li>
+              
+                    <li class="nav-item"> <!-- Elemento de lista normal -->
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item"> <!-- Elemento de lista normal -->
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Fin de la barra de navegación -->
+
+    <header class="container"> <!-- Encabezado con una clase "container" de Bootstrap -->
+        <div class="row justify-content-center align-items-center"> <!-- Fila para alinear contenido horizontal y verticalmente -->
+            <div class="col-12 text-center"> <!-- Columna con contenido centrado -->
+                <h1>Zero2Hero Academy</h1> <!-- Título principal -->
+                <img src="../static/images/logo_zero2hero.jpg" alt="Logo" class="rounded-circle logo"> <!-- Imagen del logo con clase "logo" -->
+                <p>¡Aprende a programar desde Cero!</p> <!-- Párrafo de descripción -->
+            </div>
+        </div>
+    </header> <!-- Fin del encabezado -->
+    
+    
+
+    <div id="highlights" class="container"> <!-- Sección de destacados con una clase "container" de Bootstrap -->
+        <div class="row"> <!-- Fila para organizar los elementos destacados -->
+            <div class="col-lg-3 col-md-6"> <!-- Columna para un elemento destacado -->
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;"> <!-- Tarjeta con estilo de Bootstrap -->
+                    <div class="card-header">Python</div> <!-- Cabecera de la tarjeta -->
+                    <div class="card-body">
+                      <h5 class="card-title">Python desde Cero</h5> <!-- Título de la tarjeta -->
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <!-- Contenido de la tarjeta -->
+                      <div class="container text-center"><a href="#" class="btn btn-danger btn-lg">Ir al Curso</a></div> <!-- Botón con estilo de Bootstrap -->
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Python</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Python Avanzado</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="container text-center"><a href="#" class="btn btn-danger btn-lg">Ir al Curso</a></div>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">R</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Data Science</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="container text-center"><a href="#" class="btn btn-danger btn-lg">Ir al Curso</a></div>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Python + SQL</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Data Analysis</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="container text-center"><a href="#" class="btn btn-danger btn-lg">Ir al Curso</a></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container"> <!-- Pie de página con una clase "container" de Bootstrap -->
+        <div class="row"> <!-- Fila para organizar el contenido del pie de página -->
+            <div id="contact" class="col-lg-6 col-sm-12"> <!-- Columna para información de contacto -->
+                <h3>Contacto</h3> <!-- Título de la sección de contacto -->
+                <p>Dejanos tu consulta y te responderemos a la brevedad</p> <!-- Descripción -->
+                <form> <!-- Formulario de contacto -->
+                    <!-- Campos de formulario -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="comentario" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="comentario" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-lg">Submit</button> <!-- Botón de envío -->
+                </form>
+            </div>
+            <div id="faq" class="col-lg-6 col-sm-12"> <!-- Columna para preguntas frecuentes -->
+                <h3>Preguntas Frecuentes</h3> <!-- Título de la sección de preguntas frecuentes -->
+                <p>Puede que tengas alguna de estas preguntas, ¡preparamos una respuesta para ti!</p><br> <!-- Descripción -->
+                <div class="card"> <!-- Tarjeta de preguntas frecuentes -->
+                    <ul class="list-group list-group-flush"> <!-- Lista de preguntas frecuentes -->
+                      <li class="list-group-item">¿Qué es Zero2Hero?</li> <!-- Elemento de lista -->
+                      <li class="list-group-item">¿Cómo me inscribo a un curso?</li> <!-- Elemento de lista -->
+                      <li class="list-group-item">¿Se ofrecen certificados?</li> <!-- Elemento de lista -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Fin del pie de página -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!-- Enlace al archivo JavaScript de Bootstrap -->
+</body>
+</html> <!-- Fin del documento HTML -->

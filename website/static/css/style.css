@@ -1,0 +1,35 @@
+/* Estilos para el cuerpo del documento (body) */
+body {
+    margin: 0; /* Elimina todos los márgenes predeterminados en el cuerpo del documento */
+}
+
+/* Estilos para la sección de encabezado (header) */
+header {
+    margin-top: 15px; /* Agrega un margen superior de 15px al encabezado */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px al encabezado */
+}
+
+/* Estilos para la clase "logo" dentro de la sección de encabezado */
+header .logo {
+    width: 100px; /* Establece un ancho de 100px para elementos con la clase "logo" */
+    height: auto; /* Mantiene la relación de aspecto original al ajustar el ancho */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px a elementos con la clase "logo" */
+}
+
+/* Estilos para la sección con el ID "highlights" */
+#highlights {
+    margin-top: 20px; /* Agrega un margen superior de 20px a la sección "highlights" */
+    margin-bottom: 30px; /* Agrega un margen inferior de 30px a la sección "highlights" */
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    margin-top: 20px; /* Agrega un margen superior de 20px al pie de página */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px al pie de página */
+}
+
+/* Estilos para los elementos de lista dentro de #faq cuando se pasa el cursor sobre ellos */
+#faq ul li:hover {
+    background-color: #000000; /* Cambia el color de fondo a negro cuando se pasa el cursor sobre los elementos de la lista */
+    color: white; /* Cambia el color del texto a blanco cuando se pasa el cursor sobre los elementos de la lista */
+}

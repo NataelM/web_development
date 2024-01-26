@@ -1,0 +1,93 @@
+/* Configuración general del cuerpo del documento */
+body {
+    background-color: #d16b00; /* Establece el color de fondo del cuerpo a naranja oscuro */
+    color: black; /* Establece el color del texto a negro */
+    font-family: 'Roboto', sans-serif; /* Define la fuente del texto como Roboto o una fuente sans-serif si Roboto no está disponible */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo del documento */
+}
+
+/* Estilos para el encabezado con el ID "header" 
+con un # se editan los div con id*/
+#header {
+    background-color: #000000; /* Establece el color de fondo del encabezado a negro */
+    color: #d16b00; /* Establece el color del texto en el encabezado a naranja oscuro */
+    text-align: center; /* Centra el contenido del encabezado horizontalmente */
+    padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del encabezado */
+}
+
+/* Estilos para el elemento con el ID "main-title" */
+#main-title {
+    font-size: 50px; /* Establece el tamaño de fuente a 50px */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+    margin: 0; /* Elimina el margen superior e inferior del título */
+}
+
+/* Estilos para el elemento con el ID "slogan" */
+#slogan {
+    color: white; /* Establece el color del texto del eslogan a blanco */
+}
+
+/* Estilos para el elemento con el ID "courses" */
+#courses {
+    text-align: center; /* Centra el contenido de "courses" horizontalmente */
+    margin-top: 50px; /* Agrega un margen superior de 50px */
+    margin-bottom: 100px; /* Agrega un margen inferior de 100px */
+}
+
+/* Estilos para la lista dentro de "courses" */
+#courses ul {
+    list-style: none; /* Elimina los marcadores de lista predeterminados */
+    padding: 0; /* Elimina el espacio interior predeterminado de la lista */
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+    display: flex; /* Hace que los elementos de la lista se muestren en línea horizontalmente */
+    justify-content: space-around; /* Distribuye uniformemente los elementos de la lista en el espacio disponible */
+}
+
+/* Estilos para los elementos de la lista cuando se pasa el cursor sobre ellos */
+#courses ul li:hover {
+    font-size: 120%; /* Aumenta el tamaño de fuente al 120% cuando se pasa el cursor sobre los elementos de la lista */
+    font-weight: bold; /* Establece el peso de la fuente como negrita */
+    color: white; /* Cambia el color del texto a blanco cuando se pasa el cursor sobre los elementos de la lista */
+}
+
+/* Estilos para el elemento con el ID "content" */
+#content {
+    text-align: center; /* Centra el contenido de "content" horizontalmente */
+    margin-bottom: 100px; /* Agrega un margen inferior de 100px */
+    display: flex; /* Hace que los elementos de "content" se muestren en línea horizontalmente */
+    justify-content: center; /* Centra horizontalmente los elementos de "content" */
+}
+
+/* Estilos para el contenido dentro de "content-content" */
+#content-content {
+    width: 70%; /* Establece el ancho del contenido en un 70% del ancho del contenedor */
+    background-color: white; /* Establece el color de fondo del contenido en blanco */
+    border-radius: 10px; /* Agrega bordes redondeados al contenido con un radio de 10px */
+}
+
+#footer {
+    display: flex; /* Hace que los elementos dentro de "footer" se muestren en línea horizontalmente */
+    justify-content: space-around; /* Distribuye uniformemente los elementos dentro de "footer" en el espacio disponible */
+    background-color: black; /* Establece el color de fondo de "footer" a negro */
+    color: white; /* Establece el color del texto en "footer" a blanco */
+}
+
+/* Estilos para el elemento con el ID "footer" 
+conun "." se editan las clases de los divs
+*/
+/* Estilos para las secciones dentro de "footer" */
+.footer-section {
+    text-align: center; /* Centra el contenido de las secciones horizontalmente */
+}
+
+/* Estilos para los títulos de las secciones en "footer" */
+.footer-title {
+    font-size: 20px; /* Establece el tamaño de fuente de los títulos a 20px */
+    font-weight: bold; /* Establece el peso de la fuente de los títulos como negrita */
+    margin: 0; /* Elimina el margen superior e inferior de los títulos */
+}
+
+/* Estilos para las listas dentro de "footer" */
+.footer-list {
+    list-style: none; /* Elimina los marcadores de lista predeterminados en las listas del pie de página */
+}

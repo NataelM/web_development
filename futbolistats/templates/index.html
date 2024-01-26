@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML como HTML5 -->
+<html lang="en"> <!-- Etiqueta HTML con el atributo "lang" configurado en inglés (en) -->
+<head>
+    <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la ventana de visualización y escala inicial -->
+    <title>Futbolistats</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="../static/css/style.css"> <!-- Enlace a una hoja de estilo CSS personalizada -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Enlace al archivo CSS de Bootstrap -->
+</head>
+<body>
+
+    <header class="bg-dark py-3"> <!-- Encabezado con una clase "bg-dark" para el fondo oscuro y "py-3" para relleno vertical -->
+        <div class="container"> <!-- Contenedor para alinear el contenido -->
+            <nav class="navbar navbar-expand-lg navbar-dark"> <!-- Barra de navegación con clases de Bootstrap -->
+                <a class="navbar-brand" href="#">Futbolistats</a> <!-- Marca del sitio -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <!-- Icono del botón de navegación en dispositivos móviles -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav"> <!-- Contenido de la barra de navegación colapsable -->
+                    <ul class="navbar-nav ml-auto"> <!-- Lista de elementos de navegación en el lado derecho -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a> <!-- Enlace a la página de inicio -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Precio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero text-white text-center d-flex align-items-center justify-content-center" style="background-image: url('../static/images/futbolistats.png'); height: 80vh;"> <!-- Sección con imagen de fondo y estilos -->
+        <div class="overlay" style="background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%; position: absolute;"></div> <!-- Capa de superposición semitransparente -->
+        <div class="content" style="z-index: 2;"> <!-- Contenido de la sección -->
+            <h1 class="mb-3">Análisis deportivo en tiempo real</h1> <!-- Título principal -->
+            <p class="mb-4">La inteligencia deportiva en un sólo lugar.</p> <!-- Descripción -->
+            <a href="#" class="btn btn-primary btn-lg">saber más</a> <!-- Botón de inicio con estilo de Bootstrap -->
+        </div>
+    </section>
+
+    <section class="features py-5 bg-light"> <!-- Sección de características con fondo claro -->
+        <div class="container"> <!-- Contenedor para organizar contenido -->
+            <div class="row"> <!-- Fila para alinear elementos -->
+                <!-- Feature 1 -->
+                <div class="icon col-md-4 text-center mb-3">
+                    <div class="icon-live-stats"> <!-- Inicia otro div con clases para alinear elementos en el centro tanto vertical como horizontalmente -->
+                    </div> <!-- Cierra el div interno -->
+                    <h3>Estadísticas en streaming</h3> <!-- Encabezado de nivel 3 con el texto "Estadísticas en streaming" -->
+                    <p>Sigue cada partido con actualizaciones en tiempo real y estadísticas on-time.</p> <!-- Párrafo de texto con una descripción -->                
+                </div>
+                <!-- Feature 2 -->
+                <div class="icon col-md-4 text-center mb-3">
+                    <div class="icon-player-analysis d-flex align-items-center justify-content-center">
+                    </div>
+                    <h3>Análisis de jugadores</h3>
+                    <p>Análisis detallados de jugadores para explorar y mejorar el performance.</p>
+                </div>
+                <div class="icon col-md-4 text-center mb-3">
+                    <div class="icon-team-insights d-flex align-items-center justify-content-center">
+                    </div>
+                    <h3>estadísticas por equipos</h3>
+                    <p>Estadísticas detalladas por equipo y recomendaciones de posiciones de juego.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">¿Cómo funciona?</h2>
+            <div class="row">
+                <div class="col">
+                    <!-- Steps or Guide -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Opiniones de nuestros clientes</h2>
+            <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel items -->
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Elige tu plan</h2>
+            <div class="row">
+                <!-- Pricing Plans -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Futbolistats. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
