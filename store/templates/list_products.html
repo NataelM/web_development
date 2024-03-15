@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{%block title%}Catalog{%endblock%}
+
+{%block content%}
+<h1>Product Catalog</h1>
+<a href="{{url_for('add_product')}}" class="btn btn-primary">Add product</a>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+                <a href="/update/{{ product.id }}">Edit</a> |
+                <a href="/delete/{{ product.id }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+{%endblock%}

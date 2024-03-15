@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{%block title%}Add Products{%endblock%}
+
+{%block content%}
+    <form action="/add" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="quantity">Quantity:</label><br>
+        <input type='number' id="quantity" name="quantity"></input><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price"><br><br>
+        <input type="submit" value="Add Product">
+    </form>
+{%endblock%}

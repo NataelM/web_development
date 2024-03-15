@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{%block title%}Virtual Store{%endblock%}
+
+{%block content%}
+
+<div class="container">
+    <h1>Virtual Store</h1>
+    <p>Watch all of our products</p>
+    <div class="container">
+        {%for product in products%}
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                {{product.name}}
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Price ${{product.price}} </li>
+                <li class="list-group-item">left: {{product.quantity}} </li>
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{%endblock%}

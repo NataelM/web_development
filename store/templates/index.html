@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{%block title%}Home{%endblock%}
+
+{%block content%}
+    <h1>Online Store</h1>
+    <p>Action to perform</p>
+    <ul>
+        <li><a href="{{url_for('list_products')}}">See catalog</a></li>
+        <li><a href="{{url_for('add_product')}}">Add product</a></li>
+    </ul>
+{%endblock%}
